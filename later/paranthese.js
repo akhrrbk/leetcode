@@ -3,6 +3,8 @@
  * @return {boolean}
  */
 var s = "([)]"
+var boolean = false
+
 var isValid = function(s) {
     var countA = 0
     var countB = 0
@@ -10,7 +12,9 @@ var isValid = function(s) {
     
     for(let i = 0; i < s.length; i++){
         if(s[i] === '('){
-            countA++
+            for(let y = 0; y < s.length - i - 1; y++){
+                
+            }
         } else if(s[i] === ')'){
             countA--
         } else if(s[i] === '['){

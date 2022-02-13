@@ -5,6 +5,7 @@
 var data = ["flower","flow","flight"]
 var boolean = false;
 var shortestitem = data[0]
+var saving = ''
 
 var longestCommonPrefix = function(data) {
     for(let i = 0; i < data.length; i++){
@@ -18,6 +19,7 @@ var longestCommonPrefix = function(data) {
             if(shortestitem !== data[z]){
                 if(shortestitem[y] === data[z][y]){
                     console.log(`from ${shortestitem} ${shortestitem[y]} - from ${data[z]} ${data[z][y]}`);
+                    
                 }
             }
         }
